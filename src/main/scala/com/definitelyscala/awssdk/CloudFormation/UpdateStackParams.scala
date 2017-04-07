@@ -3,7 +3,7 @@ package com.definitelyscala.awssdk.CloudFormation
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-//  SUCCESS | FAILURE
+  //  SUCCESS | FAILURE
 @js.native
 trait UpdateStackParams extends js.Object {
   var StackName: String = js.native
