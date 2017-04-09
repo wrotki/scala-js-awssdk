@@ -1,14 +1,14 @@
-scala-js-aws-sdk
+scala-js-awssdk
 ===============
 
-[![Build Status](https://travis-ci.org/DefinitelyScala/scala-js-aws-sdk.svg?branch=master)](https://travis-ci.org/DefinitelyScala/scala-js-aws-sdk)
+[![Build Status](https://travis-ci.org/DefinitelyScala/scala-js-awssdk.svg?branch=master)](https://travis-ci.org/DefinitelyScala/scala-js-awssdk)
 [![Scala.js](https://www.scala-js.org/assets/badges/scalajs-0.6.15.svg)](https://www.scala-js.org/)
 
 Scala.js facades for [aws-sdk](https://github.com/aws/aws-sdk-js).
 
 This project depends on `scala-js-node`.
 
-Generated from [TypeScript definitions](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/aws-sdk) based on aws-sdk .
+Generated from [TypeScript definitions](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/awssdk) based on aws-sdk .
 
 Usage
 -----
@@ -22,7 +22,7 @@ resolvers += Resolver.jcenterRepo,
 Then, add it to your SBT dependencies:
 
 ```
-libraryDependencies += "com.definitelyscala" %%% "scala-js-aws-sdk" % "1.0.0"
+libraryDependencies += "com.definitelyscala" %%% "scala-js-awssdk" % "1.0.0"
 ```
 
 Classes and traits are available in the package `com.definitelyscala.awssdk`, scaladoc is provided.
