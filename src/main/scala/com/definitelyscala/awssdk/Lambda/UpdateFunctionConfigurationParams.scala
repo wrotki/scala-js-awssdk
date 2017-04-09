@@ -2,7 +2,7 @@ package com.definitelyscala.awssdk.Lambda
 
 import scala.scalajs.js
 
-  /* new Buffer('...') || string; */
+/* new Buffer('...') || string; */
 @js.native
 trait UpdateFunctionConfigurationParams extends js.Object {
   var FunctionName: String = js.native

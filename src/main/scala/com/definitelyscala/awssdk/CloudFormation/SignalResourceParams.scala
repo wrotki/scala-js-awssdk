@@ -2,7 +2,7 @@ package com.definitelyscala.awssdk.CloudFormation
 
 import scala.scalajs.js
 
-  //  cannot set both StackPolicyBody and StackPolicyURL
+//  cannot set both StackPolicyBody and StackPolicyURL
 @js.native
 trait SignalResourceParams extends js.Object {
   var StackName: String = js.native

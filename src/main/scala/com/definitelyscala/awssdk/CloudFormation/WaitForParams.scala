@@ -2,7 +2,7 @@ package com.definitelyscala.awssdk.CloudFormation
 
 import scala.scalajs.js
 
-  //  must pass either TemplateBody or TemplateURL
+//  must pass either TemplateBody or TemplateURL
 @js.native
 trait WaitForParams extends js.Object {
   var StackName: String = js.native

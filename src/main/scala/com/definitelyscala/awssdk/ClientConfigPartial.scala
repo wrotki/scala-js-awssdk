@@ -4,8 +4,6 @@ import scala.scalajs.js
 
 @js.native
 trait ClientConfigPartial extends Services {
-  var credentials: Credentials = js.native
-  var region: String = js.native
   var computeChecksums: Boolean = js.native
   var convertResponseTypes: Boolean = js.native
   var logger: Logger = js.native
