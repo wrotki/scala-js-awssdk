@@ -45,7 +45,7 @@ object Projects {
     bintrayVcsUrl := Some("git:git@github.com:DefinitelyScala/scala-js-awssdk.git"),
     publishMavenStyle := true,
     licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
-    libraryDependencies ++= Seq("org.scala-js" %%% "scalajs-dom" % "0.9.2", "com.definitelyscala" %%% "scala-js-node" % "1.0.0"),
+    libraryDependencies ++= Seq("org.scala-js" %%% "scalajs-dom" % "0.9.2", "com.definitelyscala" %%% "scala-js-node" % "1.0.1"),
     scalaJSStage in Global := FastOptStage
   )
 
