@@ -26,26 +26,27 @@ object Projects {
 
     shellPrompt := { state => s"[${Project.extract(state).currentProject.id}] $$ " },
     resolvers += Resolver.jcenterRepo,
+    resolvers += Resolver.bintrayRepo("wrotki", "maven-repo"),
     ScalariformKeys.preferences := ScalariformKeys.preferences.value
   ) ++ scalariformSettings
 
   private[this] val scalaJsSettings = Seq(
     name := projectName,
-    organization := "com.definitelyscala",
+    organization := "io.wrotki",
     homepage := Some(url("https://github.com/DefinitelyScala/scala-js-awssdk")),
     scmInfo := Some(ScmInfo(
       url("https://github.com/DefinitelyScala/scala-js-awssdk"),
       "scm:git:git@github.com:DefinitelyScala/scala-js-awssdk.git",
       Some("scm:git:git@github.com:DefinitelyScala/scala-js-awssdk.git")
     )),
-    bintrayOrganization := Some("definitelyscala"),
+    bintrayOrganization := Some("wrotki"),
     bintrayPackageLabels := Seq("scala", "scala.js"),
     bintrayPackage := "scala-js-awssdk",
-    bintrayRepository := "maven",
+    bintrayRepository := "maven-repo",
     bintrayVcsUrl := Some("git:git@github.com:DefinitelyScala/scala-js-awssdk.git"),
     publishMavenStyle := true,
     licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
-    libraryDependencies ++= Seq("org.scala-js" %%% "scalajs-dom" % "0.9.2", "com.definitelyscala" %%% "scala-js-node" % "1.0.2"),
+    libraryDependencies ++= Seq("org.scala-js" %%% "scalajs-dom" % "0.9.2", "io.wrotki" %%% "scala-js-node" % "1.0.2"),
     scalaJSStage in Global := FastOptStage
   )
 
